@@ -9,4 +9,37 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 
-## Exploring T-Tests
+## 1. Confidence Intervals
+
+```{r}
+
+otter_length <- c(100, 120, 123, 98, 86, 93, 95, 89, 101)
+
+t.test(otter_length)
+
+```
+
+## 2. T-test (1-sample t-test)
+
+Claim: mean is 100.6 inches instead of 91 inches
+
+```{r}
+otter_test <- t.test(otter_length, mu = 91)
+otter_test
+```
+
+
+## 3. Two-sample t-test
+
+```{r}
+desert_bighorns <- c(12, 34, 20, 31, 24, 28, 29, 24, 31, 16, 18)
+sierra_bighorns <- c(10, 11, 17, 16, 23, 24, 18)
+
+t.test(desert_bighorns, y=sierra_bighorns)
+```
+
+
+
+
+
+
