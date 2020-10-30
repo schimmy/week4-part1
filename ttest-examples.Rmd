@@ -1,0 +1,12 @@
+---
+title: "week4-part1-t-tests"
+output: html_document
+author: "Colin Schimmelfing"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+## Exploring T-Tests
